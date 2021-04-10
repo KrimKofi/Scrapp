@@ -11,7 +11,9 @@
         android:layout_width="413dp"
         android:layout_height="32dp"
         android:orientation="horizontal"
-        tools:layout_editor_absoluteX="-2dp">
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
 
         <ImageButton
             android:id="@+id/imageButton"
