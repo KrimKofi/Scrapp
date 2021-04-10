@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/kollektif_reg"
+            android:textColor="#404040"
+            android:gravity="start"
+            android:text="Explore"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/button1"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="93dp"
+            android:fontFamily="@font/kollektif_reg"
+            android:text="UX/UI"
+            android:textSize="13sp"
+            app:backgroundTint="#2B8776" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="93dp"
+            android:fontFamily="@font/kollektif_reg"
+            android:text="CODE"
+            android:textSize="13sp"
+            android:textColor="#404040"
+            app:backgroundTint="#f3f3f3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="330dp"
+            android:fontFamily="@font/kollektif_reg"
+            android:textColor="@color/black"
+            android:text="Project Name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="20dp"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:id="@+id/bookmark1"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="328dp"
+            android:layout_weight="1"
+            android:onClick="ClickBookmark"
+            android:src="@drawable/ic_bookmark_2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="360dp"
+            android:fontFamily="@font/kollektif_reg"
+            android:textColor="#9E9E9E"
+            android:text="Creator's Name "/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="140dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="590dp"
+            android:fontFamily="@font/kollektif_reg"
+            android:textColor="@color/black"
+            android:text="Project Name"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="20dp"
+        android:layout_height="30dp">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="25dp"
+            android:id="@+id/bookmark2"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="588dp"
+            android:layout_weight="1"
+            android:onClick="ClickBookmark2"
+            android:src="@drawable/ic_bookmark_3" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="100dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="620dp"
+            android:fontFamily="@font/kollektif_reg"
+            android:textColor="#9E9E9E"
+            android:text="Creator's Name "/>
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/bottom_navbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="#FFFFFF"
+                app:itemIconTint="@drawable/selector"
+                app:itemTextColor="@drawable/selector"
+                app:menu="@menu/menu_navigation" />
+
+        </RelativeLayout>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>
