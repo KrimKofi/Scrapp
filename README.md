@@ -1,2 +1,0 @@
-# Scrapp
-scrapp mobile app
